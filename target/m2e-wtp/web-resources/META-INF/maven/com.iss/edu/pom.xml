@@ -90,11 +90,11 @@
 			<version>1</version>
 		</dependency>
 		
-		<!-- PostgreSQL 9.1-901 -->
+		<!-- postgresql -->
 		<dependency>
-			<groupId>postgresql</groupId>
-			<artifactId>postgresql</artifactId>
-			<version>9.1-901.jdbc4</version>
+		    <groupId>org.postgresql</groupId>
+		    <artifactId>postgresql</artifactId>
+		    <version>42.2.6</version>
 		</dependency>
 
 		<!-- Servlet -->
