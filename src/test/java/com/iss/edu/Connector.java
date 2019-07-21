@@ -15,9 +15,9 @@ public class Connector {
 		try {
 			conn = DriverManager.getConnection(url, user, password);
 			st = conn.createStatement();
-			rs = st.executeQuery("SELECT VERSION()");
+			rs = st.executeQuery("SELECT * from account");
 			if (rs.next())
-				System.out.println(rs.getString(1));
+				System.out.println(rs.getString(2));
 		} catch (SQLException sqlEX) {
 			System.out.println(sqlEX);
 		} finally {
